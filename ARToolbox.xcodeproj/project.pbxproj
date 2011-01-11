@@ -10,7 +10,15 @@
 		F56050BB12DBCA090074B5E0 = {
 			isa = PBXGroup;
 			children = (
+				F573B6DA12DBE83C00E06651 /* Externals */,
 			);
+			sourceTree = "<group>";
+		};
+		F573B6DA12DBE83C00E06651 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Externals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
