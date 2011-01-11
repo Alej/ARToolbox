@@ -1,0 +1,9 @@
+# XCode Project #
+#################
+*.perspectivev3
+*.pbxuser
+
+# Build Directory #
+###################
+build/
+
