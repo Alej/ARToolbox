@@ -6,11 +6,42 @@
 	objectVersion = 42;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F577635912E2835F004AE69D /* NSDate+ARAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F577635712E2835F004AE69D /* NSDate+ARAdditions.h */; };
+		F577635A12E2835F004AE69D /* NSDate+ARAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F577635812E2835F004AE69D /* NSDate+ARAdditions.m */; };
+		F577635C12E28379004AE69D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F577635B12E28379004AE69D /* Cocoa.framework */; };
+		F577635E12E2839A004AE69D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F577635D12E2839A004AE69D /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F577633512E281FD004AE69D /* libARToolkitOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libARToolkitOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F577635712E2835F004AE69D /* NSDate+ARAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ARAdditions.h"; sourceTree = "<group>"; };
+		F577635812E2835F004AE69D /* NSDate+ARAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ARAdditions.m"; sourceTree = "<group>"; };
+		F577635B12E28379004AE69D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		F577635D12E2839A004AE69D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F577633312E281FD004AE69D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F577635C12E28379004AE69D /* Cocoa.framework in Frameworks */,
+				F577635E12E2839A004AE69D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		F56050BB12DBCA090074B5E0 = {
 			isa = PBXGroup;
 			children = (
+				F577633D12E2823A004AE69D /* Shared */,
+				F577633F12E28243004AE69D /* OSX */,
+				F577633E12E2823E004AE69D /* iOS */,
 				F573B6DA12DBE83C00E06651 /* Externals */,
+				F577632912E281BB004AE69D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -21,7 +52,151 @@
 			name = Externals;
 			sourceTree = "<group>";
 		};
+		F577632912E281BB004AE69D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F577633512E281FD004AE69D /* libARToolkitOSX.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F577633D12E2823A004AE69D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F577634012E28255004AE69D /* Classes */,
+				F577634112E28259004AE69D /* Resources */,
+				F577634212E2825D004AE69D /* Frameworks */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F577633E12E2823E004AE69D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F577634512E28287004AE69D /* Classes */,
+				F577634612E2828C004AE69D /* Resources */,
+				F577634912E28296004AE69D /* Frameworks */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		F577633F12E28243004AE69D /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				F577634C12E282B4004AE69D /* Classes */,
+				F577634B12E282B1004AE69D /* Resources */,
+				F577634A12E282AD004AE69D /* Frameworks */,
+			);
+			path = OSX;
+			sourceTree = "<group>";
+		};
+		F577634012E28255004AE69D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F577635412E28342004AE69D /* Utilities */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F577634112E28259004AE69D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F577634212E2825D004AE69D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F577634512E28287004AE69D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F577634612E2828C004AE69D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F577634912E28296004AE69D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F577634A12E282AD004AE69D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F577635D12E2839A004AE69D /* Foundation.framework */,
+				F577635B12E28379004AE69D /* Cocoa.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F577634B12E282B1004AE69D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F577634C12E282B4004AE69D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F577635412E28342004AE69D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F577635712E2835F004AE69D /* NSDate+ARAdditions.h */,
+				F577635812E2835F004AE69D /* NSDate+ARAdditions.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F577633112E281FD004AE69D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F577635912E2835F004AE69D /* NSDate+ARAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F577633412E281FD004AE69D /* ARToolkitOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F577633A12E28207004AE69D /* Build configuration list for PBXNativeTarget "ARToolkitOSX" */;
+			buildPhases = (
+				F577633112E281FD004AE69D /* Headers */,
+				F577633212E281FD004AE69D /* Sources */,
+				F577633312E281FD004AE69D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARToolkitOSX;
+			productName = ARToolkitOSX;
+			productReference = F577633512E281FD004AE69D /* libARToolkitOSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F56050BD12DBCA090074B5E0 /* Project object */ = {
@@ -40,9 +215,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				F577633412E281FD004AE69D /* ARToolkitOSX */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F577633212E281FD004AE69D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F577635A12E2835F004AE69D /* NSDate+ARAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		F56050BE12DBCA090074B5E0 /* Debug */ = {
@@ -59,6 +246,55 @@
 			};
 			name = Release;
 		};
+		F577633612E281FD004AE69D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ARToolkitOSX;
+			};
+			name = Debug;
+		};
+		F577633712E281FD004AE69D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ARToolkitOSX;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -67,6 +303,15 @@
 			buildConfigurations = (
 				F56050BE12DBCA090074B5E0 /* Debug */,
 				F56050BF12DBCA090074B5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F577633A12E28207004AE69D /* Build configuration list for PBXNativeTarget "ARToolkitOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F577633612E281FD004AE69D /* Debug */,
+				F577633712E281FD004AE69D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
