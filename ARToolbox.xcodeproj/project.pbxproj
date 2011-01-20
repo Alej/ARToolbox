@@ -17,7 +17,7 @@
 		F577640012E28647004AE69D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
+			dstPath = ../headers;
 			dstSubfolderSpec = 16;
 			files = (
 				F577635912E2835F004AE69D /* NSDate+ARAdditions.h in CopyFiles */,
