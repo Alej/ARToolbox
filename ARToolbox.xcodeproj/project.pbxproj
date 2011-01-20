@@ -3,15 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F577635912E2835F004AE69D /* NSDate+ARAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F577635712E2835F004AE69D /* NSDate+ARAdditions.h */; };
+		F577635912E2835F004AE69D /* NSDate+ARAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F577635712E2835F004AE69D /* NSDate+ARAdditions.h */; };
 		F577635A12E2835F004AE69D /* NSDate+ARAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F577635812E2835F004AE69D /* NSDate+ARAdditions.m */; };
 		F577635C12E28379004AE69D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F577635B12E28379004AE69D /* Cocoa.framework */; };
 		F577635E12E2839A004AE69D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F577635D12E2839A004AE69D /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F577640012E28647004AE69D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				F577635912E2835F004AE69D /* NSDate+ARAdditions.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F577633512E281FD004AE69D /* libARToolkitOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libARToolkitOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,7 +185,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F577635912E2835F004AE69D /* NSDate+ARAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +198,7 @@
 				F577633112E281FD004AE69D /* Headers */,
 				F577633212E281FD004AE69D /* Sources */,
 				F577633312E281FD004AE69D /* Frameworks */,
+				F577640012E28647004AE69D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -202,7 +215,7 @@
 		F56050BD12DBCA090074B5E0 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = F56050C012DBCA090074B5E0 /* Build configuration list for PBXProject "ARToolbox" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -274,8 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
